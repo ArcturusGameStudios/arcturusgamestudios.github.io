@@ -1,137 +1,199 @@
-/* CSS Document */
+@charset "utf-8";
 
-header{
-	background: #A7A7A7;
-	height: 30px;
+.uHeader {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    background-attachment: scroll;
+    background-color: #A7A7A7;
+    background-repeat: repeat-x;
+    background-position: center top;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: baseline;
+    word-spacing: normal;
+    height: 70px;
 	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	line-height: 70px;
-	position: fixed;
+	justify-content: space-between;
+	align-content: space-between;
+	justify-items: space-around;
+	align-items: space-around;
+	
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
-footer{
-	background: #A7A7A7;
-	height: 60px;
-	width: 100%;
-	line-height: 20px;
-	position:fixed;
+
+.headerLogo {
+	width: 193px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../images/logos/logo_large_left.png');
+	justify-self: center;
+	align-self: center;
+}
+	#logoWhiteMiddle {
+		background-image: url('../images/logos/logo_white_large.png');
+		width: 193px;
+		height: 68px;
+	}
+	#logoBlueMiddle {
+		background-image: url('../images/logos/logo_large.png');
+		width: 193px;
+		height: 68px;
+	}
+	#logoBlueSide {
+		background-image: url('../images/logos/logo_large_left.png');
+		width: 456px;
+		height: 68px;
+	}
+
+.headerNavContainer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 360px;
+	overflow: hidden;
+	justify-self: start;
+	align-self: center;
+}
+
+.headerNavButton {
+	border: 1px solid black;
+	padding: 1px;
+	margin: 1px;
+	width: 80px;
+	height: 44px;
+	text-align: center;
+	background-size: cover;
+	background: #A6A6A6;
+	border-left: 1px solid #0B0B0B;
+	border-right: 1px solid #0B0B0B;
+	text-decoration: none;
+	color: #1554AD;
+	transition: ease-in-out .2s;
+	float: left;
+}
+
+.headerNavButton:hover {
+	background: #B7B0B0;
+	color: steelblue;
+}
+
+.headerSocialContainer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 360px;
+	overflow: hidden;
+	justify-self: end;
+	align-self: center;
+}
+
+.headerSocialButton {
+	height: 46px;
+	width: 46px;
+	text-align: center;
+	background-size: cover;
+	background: #A6A6A6;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-decoration: none;
+	color: #1554AD;
+	transition: ease-in-out .2s;
+	display: inline;
+	float: right;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.headerSocialButton:hover {
+	background: #B7B0B0;
+	color: steelblue;
+	font-size: 25px;
+}
+
+.headerSocialButtonIcon {
+	height: inherit;
+	width: inherit;
+	background-position: center; 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url();
+}
+	#steam {
+		background-image: url('../images/socialmedia/Steam.png');
+	}
+	#itch {
+		background-image: url('../images/socialmedia/Itch.png');
+	}
+	#facebook {
+		background-image: url('../images/socialmedia/Facebook.png');
+	}
+	#instagram {
+		background-image: url('../images/socialmedia/Instagram.png');
+	}
+	#youtube {
+		background-image: url('../images/socialmedia/Youtube.png');
+	}
+
+.box {
+	border: 1px solid black;
+	padding: 1px;
+	margin: 1px;
+}
+
+.uFooter {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    background-attachment: scroll;
+    background-color: #A7A7A7;
+    background-repeat: repeat-x;
+	position: absolute;
 	bottom: 0px;
-	right: 0px;
+    letter-spacing: normal;
+    text-align: center;
+    word-spacing: normal;
+    height: 70px;
 	width: 100%;
+	
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-between;
 }
 
-/*Header elements*/
-.logoH img {
-	position: relative;
-	height: 45px;
-	width: auto;
-	display: block;
-	margin: 0 auto;
-	top: -17px;
+.footerLogo {
+	height: 64px;
+	width: 64px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../images/logos/logo_small_icon_only_inverted.png');
 }
-.menuH {
-	position: inherit;
-	left: 10px;
-	top: 10px;
-	border-left: 1px solid #0B0B0B;
-	border-right: 1px solid #0B0B0B;
-}
-.social-containerH {
-	position: inherit;
-	right: 20px;
-	top: 10px;
-}
-.internal-link {
-	width: 90px;
-	height: 47px;
-	float: left;
-	text-align: center;
-	background: #A6A6A6;
-	border-left: 1px solid #0B0B0B;
-	border-right: 1px solid #0B0B0B;
-	text-decoration: none;
-	color: #1554AD;
-	transition: ease-in-out .5s;
-}
-.link:hover {
-	background: #B7B0B0;
-	color: steelblue;
-}
-.social-icons {
-	width: 45px;
-	height: 45px;
-	float: left;
-	text-align: center;
-	background: #A6A6A6;
+	#logoRondelWhite {
+		background-image: url('../images/logos/logo_small_icon_only.png');
+	}
+	#logoRondelBlue {
+		background-image: url('../images/logos/logo_small_icon_only_inverted.png');
+	}
+
+.footerMessage {
+	height: 64px;
+	width: 400px;
+	margin-bottom: 3px;
+	margin-top: 3px;
 	margin-left: 10px;
-	text-decoration: none;
-	color: #1554AD;
-	transition: ease-in-out .5s;
+	margin-right: 10px;
 }
-.social-icons:hover {
-	background: #B7B0B0;
-	color: steelblue;
-}
-#steam {
-	max-width: 25px;
-	max-height: auto;
-	background-image: url('../img/socialmedia/Steam.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#itch {
-	max-width: 25px;
-	max-height: auto;
-	background-image: url('../img/socialmedia/Itch.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#facebook {
-	max-width: 25px;
-	max-height: auto;
-	background-image: url('../img/socialmedia/Facebook.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#instagram {
-	max-width: 25px;
-	max-height: auto;
-	background-image: url('../img/socialmedia/Instagram.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#youtube {
-	max-width: 25px;
-	max-height: auto;
-	background-image: url('../img/socialmedia/Youtube.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-/*End of header elements*/
-
-/*Footer elements*/
-.logoF img {
-	position: relative;
-	height: 50px;
-	width: auto;
-	display: block;
-	margin: 0 auto;
-	top: 5px;
-}
-.social-containerF {
-	position: inherit;
-	left: 10px;
-	bottom: 7.5px;
-}
-.copyrightF {
-	position: inherit;
-	right: 20px;
-	bottom: 10px;
-}
-/*End of footer elements*/
