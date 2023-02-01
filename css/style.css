@@ -160,7 +160,7 @@
     background-attachment: scroll;
     background-color: #A7A7A7;
     background-repeat: repeat-x;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
     letter-spacing: normal;
     text-align: center;
