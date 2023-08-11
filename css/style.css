@@ -151,6 +151,9 @@
 	#youtube {
 		background-image: url('../images/socialmedia/Youtube.png');
 	}
+	#linkedin {
+		background-image: url('../images/socialmedia/LinkedIn.png');
+	}
 
 .box {
 	border: 1px solid black;
