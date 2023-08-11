@@ -85,6 +85,27 @@
 	color: steelblue;
 }
 
+.headerNavButtonIcon {
+	height: inherit;
+	width: inherit;
+	background-position: center; 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url();
+}
+	#home {
+		background-image: url('../images/socialmedia/Steam.png');
+	}
+	#portfolio {
+		background-image: url('../images/socialmedia/Itch.png');
+	}
+	#about {
+		background-image: url('../images/socialmedia/Facebook.png');
+	}
+	#contact {
+		background-image: url('../images/socialmedia/Instagram.png');
+	}
+
 .headerSocialContainer {
 	list-style-type: none;
 	margin: 0;
