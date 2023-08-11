@@ -190,6 +190,9 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../images/logos/logo_small_icon_only_inverted.png');
+	dispaly: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 	#logoRondelWhite {
 		background-image: url('../images/logos/logo_small_icon_only.png');
